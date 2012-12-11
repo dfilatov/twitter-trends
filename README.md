@@ -12,3 +12,5 @@ make bem-server
 // in another console window
 make app
 ````
+
+Then open you browser at: http://127.0.0.1:3000/
