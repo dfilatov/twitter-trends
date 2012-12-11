@@ -15,5 +15,5 @@ make app
 
 Then point your browser to:
   * http://127.0.0.1:3000/ -- view result (bemjson + bemhtml)
-  * http://127.0.0.1:3000/?mode=bemjson -- view bemjson (json + priv)
-  * http://127.0.0.1:3000/?mode=json -- view data json
+  * http://127.0.0.1:3000/?__mode=bemjson -- view bemjson (json + priv)
+  * http://127.0.0.1:3000/?__mode=json -- view data json
