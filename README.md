@@ -13,4 +13,4 @@ make bem-server
 make app
 ````
 
-Then open you browser at: http://127.0.0.1:3000/
+Then point your browser to: http://127.0.0.1:3000/
