@@ -6,7 +6,9 @@ blocks['b-page'].content = function(data) {
     return {
         block   : 'b-trends-rotator',
         content : data['top-trends'].map(function(trend) {
-            return blocks['b-trend'](trend);
+            var trendBEMJSON = blocks['b-trend'](trend);
+            trendBEMJSON.mix.push({ block : 'b-trends-rotator', elem : 'trend' });
+            return trendBEMJSON;
         })
     };
 };
