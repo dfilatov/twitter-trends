@@ -1,6 +1,3 @@
 ({
-    shouldDeps : [
-        'b-trend',
-        'b-tweet'
-    ]
+    shouldDeps : 'b-trends-rotator'
 })
