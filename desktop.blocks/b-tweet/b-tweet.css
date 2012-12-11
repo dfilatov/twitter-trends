@@ -1,0 +1,35 @@
+.b-tweet
+{
+    position: relative;
+    min-height: 60px;
+}
+
+.b-tweet__ava
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 50px;
+    height: 50px;
+
+    overflow: hidden;
+}
+
+.b-tweet__date
+{
+    margin-left: 5px;
+    color: #aaa;
+}
+
+.b-tweet__user,
+.b-tweet__text
+{
+    margin-left: 60px;
+}
+
+.b-tweet__text
+{
+    margin-top: .3em;
+    font-style: italic;
+}

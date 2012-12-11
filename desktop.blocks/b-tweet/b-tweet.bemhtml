@@ -1,0 +1,9 @@
+block b-tweet {
+    elem ava-img {
+        tag: 'img'
+        attrs: { src : this.ctx.src }
+    }
+
+    elem date, tag: 'span'
+    elem user, tag: 'span'
+}

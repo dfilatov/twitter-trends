@@ -1,0 +1,5 @@
+.b-island
+{
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 25px -5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
