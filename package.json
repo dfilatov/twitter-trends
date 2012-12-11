@@ -1,7 +1,7 @@
 {
     "author" : "Dmitry Filatov <dfilatov@yandex-team.ru>",
     "name" : "twitter-trends",
-    "description" : "example of bem app"
+    "description" : "example of bem app",
     "version" : "0.0.1",
     "dependencies" : {
         "express"   : "3.0.4",
