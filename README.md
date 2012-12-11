@@ -9,7 +9,7 @@ git clone git://github.com/dfilatov/twitter-trends.git
 cd twitter-trends
 npm install -d
 make bem-server
-// in another console window
+// in another console window in twitter-trends directory
 make app
 ````
 
