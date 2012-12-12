@@ -6,15 +6,7 @@ var http = require('http'),
 module.exports = {
     port : 3001,
 
-    getPagePriv : function(pagePath) {
-        return this._getPageAssetFromBemServer(pagePath, 'priv');
-    },
-
-    getPageTemplate : function(pagePath) {
-        return this._getPageAssetFromBemServer(pagePath, 'bemhtml');
-    },
-
-    _getPageAssetFromBemServer : function(pagePath, techName) {
+    getPageAsset : function(pagePath, techName) {
         var promise = Promise(),
             params = {
                 host : 'localhost',

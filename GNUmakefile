@@ -25,6 +25,13 @@ app-dev:
 app:
 	node boot.js
 
+.PHONY: app-production
+app-production:
+	rm configs/current
+	ln -s production configs/current
+	$(BEM) make --force
+	node boot.js
+
 .PHONY: clean
 clean::
 	$(BEM) make -m clean
