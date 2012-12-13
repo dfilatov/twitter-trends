@@ -2,7 +2,7 @@
 
 "use strict";
 
-process.env.YENV = 'development';
+typeof process.env.YENV === 'undefined' && (process.env.YENV = 'development');
 
 MAKE.decl('Arch', {
     blocksLevelsRegexp: /^.+?\.blocks/,
@@ -44,12 +44,4 @@ MAKE.decl('BundleNode', {
             'js'
         ];
     }
-
-    /*'create-js-optimizer-node': function(tech, sourceNode, bundleNode) {
-        return this.createBorschikOptimizerNode(tech, sourceNode, bundleNode);
-    }
-
-    /*'create-css-optimizer-node': function(tech, sourceNode, bundleNode) {
-        return this.createBorschikOptimizerNode(tech, sourceNode, bundleNode);
-    }*/
 });
