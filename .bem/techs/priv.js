@@ -9,12 +9,8 @@ exports.techMixin = {
     getBuildResult: function(prefixes, suffix, outputDir, outputName) {
         return this.__base.apply(this, arguments)
             .then(function(res) {
-                res.unshift('var blocks = {}; module.exports = blocks;');
+                res.unshift('var blocks = module.exports;');
                 return res;
             });
-    }/*,
-
-    getDependencies: function() {
-        return ['bemhtml'];
-    }*/
+    }
 };
