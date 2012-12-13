@@ -5,13 +5,11 @@
 process.env.YENV = 'development';
 
 MAKE.decl('Arch', {
-
     blocksLevelsRegexp: /^.+?\.blocks/,
 
     bundlesLevelsRegexp: /^.+?\.bundles$/,
 
     getLibraries: function() {
-
         return {
             'bem-bl': {
                 type: 'git',
@@ -23,14 +21,11 @@ MAKE.decl('Arch', {
                 url: 'git://github.com/bem/bemhtml.git'
             }
         };
-
     }
-
 });
 
 
 MAKE.decl('BundleNode', {
-
     getTechs: function() {
         return [
             'bemjson.js',
@@ -41,6 +36,13 @@ MAKE.decl('BundleNode', {
             'js',
             'css'
         ];
-    }
+    },
 
+    getOptimizerTechs: function() {
+        return [
+            'css',
+            'js',
+            'priv.js'
+        ];
+    }
 });

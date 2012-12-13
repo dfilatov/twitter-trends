@@ -1,1 +1,1 @@
-web: make app-production
+web: node boot.js
