@@ -41,8 +41,15 @@ MAKE.decl('BundleNode', {
     getOptimizerTechs: function() {
         return [
             'css',
-            'js',
-            'priv.js'
+            'js'
         ];
     }
+
+    /*'create-js-optimizer-node': function(tech, sourceNode, bundleNode) {
+        return this.createBorschikOptimizerNode(tech, sourceNode, bundleNode);
+    }
+
+    /*'create-css-optimizer-node': function(tech, sourceNode, bundleNode) {
+        return this.createBorschikOptimizerNode(tech, sourceNode, bundleNode);
+    }*/
 });
