@@ -2,12 +2,13 @@
     "author" : "Dmitry Filatov <dfilatov@yandex-team.ru>",
     "name" : "twitter-trends",
     "description" : "example of bem app",
-    "version" : "0.0.2",
+    "version" : "0.0.3",
     "engines" : {
         "node" : "0.8.x",
         "npm"  : "1.1.65"
     },
     "dependencies" : {
+        "inherit"      : "1.0.4",
         "express"      : "3.0.4",
         "winston"      : "0.6.2",
         "jaggi"        : "0.0.9",
