@@ -26,6 +26,6 @@ if(cluster.isMaster) {
     }
 }
 else {
-    logger.debug('worker %s started', process.pid);
+    logger.info('worker %s started', process.pid);
     app.start();
 }

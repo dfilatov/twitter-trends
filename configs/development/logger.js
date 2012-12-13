@@ -1,6 +1,6 @@
 module.exports = {
     console : {
-        level    : 'info',
+        level    : 'verbose',
         colorize : true
     }
 };
