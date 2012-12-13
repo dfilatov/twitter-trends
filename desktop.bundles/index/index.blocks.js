@@ -4,6 +4,7 @@ module.exports = {
             call : {
                 'trends' : {
                     include : 'includes/trends.js',
+                    timeout : 10000,
                     toState : { trends : '.trends[:3]' },
                     pointer : '.trends[:3]'
                 },
@@ -18,7 +19,8 @@ module.exports = {
                         return params.trends.map(function(trend) {
                             return {
                                 include : 'includes/tweets.js',
-                                params : function() {
+                                timeout : 10000,
+                                params  : function() {
                                     var res = this.__base();
                                     res.data = { q : trend.query };
                                     return res;
@@ -26,7 +28,8 @@ module.exports = {
                                 pointer : '.results[:3]'
                             }
                         });
-                    }
+                    },
+                    timeout : 10000
                 }
             },
 
@@ -34,7 +37,8 @@ module.exports = {
                 promise.fulfill(buildTrendsWithTweets(res.trends, res.tweets));
             }
         }
-    }
+    },
+    timeout : 20000
 };
 
 function buildTrendsWithTweets(trends, tweets) {

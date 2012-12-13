@@ -41,7 +41,7 @@ deploy:
 	ln -s production configs/current; \
 	$(NPM) install -d; \
 	YENV=production $(BEM) make --force; \
-	echo "bem-bl\nbemhtml\nnode_modules\n.bem" > .gitignore; \
+	echo "node_modules\n.bem" > .gitignore; \
 	git add .; \
 	git ci -m "deploy"; \
 	git push; \

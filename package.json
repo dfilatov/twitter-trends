@@ -8,12 +8,14 @@
         "npm"  : "1.1.65"
     },
     "dependencies" : {
-        "bem"          : "git://github.com/bem/bem-tools.git",
         "express"      : "3.0.4",
         "winston"      : "0.6.2",
         "jaggi"        : "0.0.9",
         "jspromise"    : "0.0.5",
         "highlight.js" : ""
+    },
+    "devDependencies" : {
+        "bem" : "0.5.20"
     },
     "private" : true
 }
