@@ -33,6 +33,8 @@ module.exports = {
                 }
             },
 
+            timeout : 10000,
+
             done : function(res, _, promise) {
                 promise.fulfill(buildTrendsWithTweets(res.trends, res.tweets));
             }
