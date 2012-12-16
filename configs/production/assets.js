@@ -5,8 +5,8 @@ var path = require('path'),
 module.exports = {
     host : '',
 
-    middleware : function() {
-        return express.static(__dirname + '/../..');
+    middleware : function(app) {
+        app.use('/desktop.bundles', express.static(__dirname + '/../../desktop.bundles'));
     },
 
     getPageAsset : function(pagePath, techName) {
