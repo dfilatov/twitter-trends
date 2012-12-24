@@ -16,7 +16,7 @@
         "highlight.js" : ""
     },
     "devDependencies" : {
-        "bem" : "0.5.20"
+        "bem" : "0.5.22"
     },
     "private" : true
 }
