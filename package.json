@@ -11,8 +11,8 @@
         "inherit"      : "1.0.4",
         "express"      : "3.0.4",
         "winston"      : "0.6.2",
-        "jaggi"        : "0.0.9",
-        "jspromise"    : "0.0.7",
+        "jaggi"        : "0.1.2",
+        "vow"          : "0.1.5",
         "highlight.js" : ""
     },
     "devDependencies" : {
