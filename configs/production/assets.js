@@ -1,5 +1,5 @@
 var path = require('path'),
-    Promise = require('jspromise'),
+    Vow = require('vow'),
     express = require('express');
 
 module.exports = {
@@ -10,11 +10,6 @@ module.exports = {
     },
 
     getPageAsset : function(pagePath, techName) {
-        var promise = Promise(),
-            asset = require(path.join('..', '..', pagePath, path.basename(pagePath) + '.' + techName));
-
-        promise.fulfill(asset);
-
-        return promise;
+        return Vow.promise(require(path.join('..', '..', pagePath, path.basename(pagePath) + '.' + techName)));
     }
 };
