@@ -1,13 +1,13 @@
 var http = require('http'),
     path = require('path'),
-    Promise = require('jspromise'),
+    Vow = require('vow'),
     util = require('util');
 
 module.exports = {
     port : 3001,
 
     getPageAsset : function(pagePath, techName) {
-        var promise = Promise(),
+        var promise = Vow.promise(),
             params = {
                 host : 'localhost',
                 port : this.port,
