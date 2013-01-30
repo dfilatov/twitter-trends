@@ -1,9 +1,17 @@
 var cluster = require('cluster'),
+    fs = require('fs'),
     env = require('./lib/config').get('env'),
     logger = require('./lib/logger'),
     app = require('./lib/app');
 
 if(cluster.isMaster) {
+    if(env.socket) {
+        try {
+            fs.unlinkSync(env.socket);
+        }
+        catch(e) {}
+    }
+
     var workersCount = env.workersCount;
 
     while(workersCount--) {
