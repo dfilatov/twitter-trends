@@ -16,17 +16,11 @@ module.exports = {
             request = http.request(
                 params,
                 function(res) {
-                    var body = '';
-                    res.setEncoding('utf-8');
-                    res
-                        .on('data', function(chunk) {
-                            body += chunk;
-                        })
-                        .once('end', function() {
-                            var _module = { exports : {}};
-                            Function('module,exports', body)(_module, _module.exports);
-                            promise.fulfill(_module.exports);
-                        });
+                    res.once('end', function() {
+                        var modulePath = path.join('..', '..', pagePath, path.basename(pagePath) + '.' + techName + '.' + 'js');
+                        delete require.cache[path.resolve(__dirname, modulePath)];
+                        return promise.fulfill(require(modulePath));
+                    });
                 });
 
         request
