@@ -2,8 +2,6 @@
 
 "use strict";
 
-typeof process.env.YENV === 'undefined' && (process.env.YENV = 'development');
-
 MAKE.decl('Arch', {
     blocksLevelsRegexp: /^.+?\.blocks/,
 
@@ -14,11 +12,7 @@ MAKE.decl('Arch', {
             'bem-bl': {
                 type: 'git',
                 url: 'git://github.com/bem/bem-bl.git',
-                treeish: '0.3'
-            },
-            'bemhtml' : {
-                type: 'git',
-                url: 'git://github.com/bem/bemhtml.git'
+                branch: '0.3'
             }
         };
     }

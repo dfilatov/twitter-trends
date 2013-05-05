@@ -16,7 +16,7 @@ exports.getTechs = function() {
         'priv.js'       : pjoin(PRJ_TECHS, 'priv.js'),
         'js'            : 'js-i',
         'css'           : 'css',
-        'bemhtml'       : pjoin(PRJ_ROOT, 'bemhtml/.bem/techs/bemhtml.js')
+        'bemhtml'       : pjoin(PRJ_ROOT, 'bem-bl/blocks-common/i-bem/bem/techs/bemhtml.js')
     };
 
 };
