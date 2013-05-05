@@ -37,7 +37,7 @@ deploy:
 	git clone $(HEROKU_REPO) heroku; \
 	cp -r github/{.bem,common.blocks,configs,desktop.{blocks,bundles},lib,Procfile,boot.js,package.json} heroku; \
 	cd heroku; \
-	rm -rf bem-bl bemhtml configs/current; \
+	rm -rf bem-bl configs/current; \
 	ln -s production configs/current; \
 	$(NPM) install -d; \
 	YENV=production $(BEM) make --force; \
