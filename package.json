@@ -11,12 +11,12 @@
         "inherit"      : "1.0.4",
         "express"      : "3.1.0",
         "winston"      : "0.6.2",
-        "jaggi"        : "0.1.6",
-        "vow"          : "0.2.0",
+        "jaggi"        : "0.1.8",
+        "vow"          : "0.2.6",
         "highlight.js" : ""
     },
     "devDependencies" : {
-        "bem" : "0.5.26"
+        "bem" : "0.5.31"
     },
     "private" : true
 }
